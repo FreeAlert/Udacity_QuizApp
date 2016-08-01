@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ebebeb"
+    android:background="@color/background"
     android:fillViewport="false"
     tools:context="com.mengyuantu.chordsquiz.MainActivity">
 
@@ -12,14 +12,6 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:padding="16dp">
-
-        <EditText
-            android:id="@+id/name_input"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:hint="what's your name?"
-            android:inputType="textCapWords" />
 
         <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
             android:layout_width="match_parent"
@@ -100,6 +92,7 @@
                     android:layout_height="wrap_content"
                     android:text="A"/>
                 <CheckBox
+                    android:id="@+id/question_two_answer_three"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="C"/>
@@ -234,6 +227,35 @@
             </LinearLayout>
 
         </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="8dp"
+            card_view:cardCornerRadius="4dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="16dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="16dp"
+                    android:text="How many strings does a guitar have?"
+                    android:textSize="24sp" />
+                <EditText
+                    android:id="@+id/question_five_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Input a number"
+                    android:inputType="number"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
